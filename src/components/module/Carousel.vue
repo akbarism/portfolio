@@ -1,28 +1,48 @@
 <template>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="2000">
         <div class="cover">
-            <h1 class="head">Point Of Sale</h1>
+          <h1 class="head">Point Of Sale</h1>
         </div>
-        <img src="../../assets/img/bg-pos.jpg" class="d-block w-100" alt="..." />
+        <img
+          src="../../assets/img/bg-pos.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
       </div>
       <div class="carousel-item" data-interval="2000">
-          <div class="cover">
-            <h1 class="head">Centimeter</h1>
+        <div class="cover">
+          <h1 class="head">Centimeter</h1>
         </div>
-        <img src="../../assets/img/bg-chat.jpg" class="d-block w-100" alt="..." />
+        <img
+          src="../../assets/img/bg-chat.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
       </div>
       <div class="carousel-item" data-interval="2000">
-          <div class="cover">
-            <h1 class="head">Library</h1>
+        <div class="cover">
+          <h1 class="head">Library</h1>
         </div>
-        <img src="../../assets/img/bg-book.jpg" class="d-block w-100" alt="..." />
+        <img
+          src="../../assets/img/bg-book.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
       </div>
     </div>
     <a
@@ -48,27 +68,38 @@
 
 <script>
 export default {
-    name: "Carousel"
+  name: "Carousel"
 };
 </script>
 
 <style scoped>
 .carousel-inner {
-    position: relative;
-    height: 450px;
+  position: relative;
+  height: 450px;
 }
 .cover {
-    width: 100%;
-    height: 450px;
-    position: absolute;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    z-index: 2;
-    text-align: center;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  z-index: 2;
+  text-align: center;
 }
 .head {
-    color: #ffffff;
-    font-family: 'Pacifico', cursive;
-    font-size: 70px;
-    margin-top: 160px;
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  margin-top: 160px;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-inner {
+    height: 200px;
+  }
+  .cover {
+    height: 200px;
+  }
+  .head {
+    margin-top: 30px;
+  }
 }
 </style>
